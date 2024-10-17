@@ -53,7 +53,6 @@
             this.colKhoa = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colDTB = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colChuyennganh = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureAvatar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTableSV)).BeginInit();
@@ -223,13 +222,12 @@
             this.colHoten,
             this.colKhoa,
             this.colDTB,
-            this.colChuyennganh,
-            this.Column1});
+            this.colChuyennganh});
             this.dgvTableSV.Location = new System.Drawing.Point(510, 148);
             this.dgvTableSV.Name = "dgvTableSV";
             this.dgvTableSV.RowHeadersWidth = 51;
             this.dgvTableSV.RowTemplate.Height = 24;
-            this.dgvTableSV.Size = new System.Drawing.Size(1066, 505);
+            this.dgvTableSV.Size = new System.Drawing.Size(936, 505);
             this.dgvTableSV.TabIndex = 0;
             // 
             // label6
@@ -253,7 +251,7 @@
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(6, 3, 0, 3);
-            this.menuStrip1.Size = new System.Drawing.Size(1583, 35);
+            this.menuStrip1.Size = new System.Drawing.Size(1453, 35);
             this.menuStrip1.TabIndex = 3;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -312,20 +310,13 @@
             this.colChuyennganh.Name = "colChuyennganh";
             this.colChuyennganh.Width = 236;
             // 
-            // Column1
-            // 
-            this.Column1.HeaderText = "Hình ảnh";
-            this.Column1.MinimumWidth = 8;
-            this.Column1.Name = "Column1";
-            this.Column1.Width = 150;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.ClientSize = new System.Drawing.Size(1583, 683);
+            this.ClientSize = new System.Drawing.Size(1453, 683);
             this.Controls.Add(this.chkUnregisterMajor);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.dgvTableSV);
@@ -374,7 +365,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn colKhoa;
         private System.Windows.Forms.DataGridViewTextBoxColumn colDTB;
         private System.Windows.Forms.DataGridViewTextBoxColumn colChuyennganh;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
     }
 }
 

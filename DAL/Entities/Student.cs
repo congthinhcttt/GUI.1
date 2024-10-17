@@ -22,11 +22,11 @@ namespace DAL.Entities
 
         public int? MajorID { get; set; }
 
-        
+        [StringLength(255)]
+        public Byte[] Avatar { get; set; }
 
         public virtual Faculty Faculty { get; set; }
 
         public virtual Major Major { get; set; }
-        public string AvatarPath { get; set; }
     }
 }

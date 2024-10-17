@@ -21,7 +21,7 @@ namespace GUI
         public Form1()
         {
             InitializeComponent();
-            this.btnAddPicture.Click += new System.EventHandler(this.btnAddPicture_Click);
+     
 
         }
 
@@ -105,22 +105,14 @@ namespace GUI
         {
             try
             {
-                // Lấy thông tin từ các trường nhập liệu
-                string studentID = txtMSSV.Text;
-                string fullName = txtHoten.Text;
-                double averageScore = double.Parse(txtDTB.Text);
-                int facultyID = (int)cbbChuyenNganh.SelectedValue;
-                string imagePath = pictureAvatar.Tag?.ToString(); // Lấy đường dẫn ảnh từ Tag
-
                 // Tạo một đối tượng sinh viên mới
                 var student = new Student
                 {
-                    StudentID = studentID,
-                    FullName = fullName,
-                    AverageScore = averageScore,
-                    FacultyID = facultyID,
-                    MajorID = null, // Nếu có ngành học, bạn có thể lấy giá trị từ combobox khác nếu có
-                    AvatarPath = imagePath // Lưu đường dẫn ảnh
+                    StudentID = txtMSSV.Text,
+                    FullName = txtHoten.Text,
+                    AverageScore = double.Parse(txtDTB.Text),
+                    FacultyID = (int)cbbChuyenNganh.SelectedValue,
+                    MajorID = null // Nếu có ngành học, bạn có thể lấy giá trị từ combobox khác nếu có
                 };
 
                 // Gọi service để thêm sinh viên
@@ -131,7 +123,6 @@ namespace GUI
 
                 // Thông báo thành công
                 MessageBox.Show("Thêm sinh viên thành công!");
-
             }
             catch (Exception ex)
             {
@@ -236,7 +227,7 @@ namespace GUI
                 pictureAvatar.SizeMode = PictureBoxSizeMode.StretchImage;
             }
         }
-        private void SaveImagePathToDatabase(string imagePath)
+        /*private void SaveImagePathToDatabase(string imagePath)
         {
             string connectionString = "DESKTOP-BR9PJB9\\SQLEXPRESS";
             using (SqlConnection connection = new SqlConnection(connectionString))
@@ -249,6 +240,6 @@ namespace GUI
                     command.ExecuteNonQuery();
                 }
             }
-        }
+        }*/
     }
 }
